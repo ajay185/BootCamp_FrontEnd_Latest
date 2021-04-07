@@ -1,5 +1,4 @@
 pwd
-cd modules/k8s
-sed "s/tagversion/$1/g" frontend.tf > frontend1.tf
+sed "s/tagversion/$1/g" frontend.yaml > frontend1.yaml
 rm frontend.tf
 cd ../../..
