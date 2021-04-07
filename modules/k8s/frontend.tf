@@ -4,7 +4,7 @@ resource "kubernetes_deployment" "frontend-deployment" {
     labels = {
       App = "frontend"
     }
-    namespace = kubernetes_namespace.n.metadata[0].name
+    namespace = "kubernetes-aks1"
   }
 
   spec {
